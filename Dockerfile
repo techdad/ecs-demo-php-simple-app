@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 # Install dependencies
 RUN apt-get update -y
-RUN apt-get install -y git curl apache2 php7.1 libapache2-mod-php7.1 php7.1-mcrypt php7.1-mysql
+RUN apt-get install -y git curl apache2 php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-mysql
 
 # Install app
 RUN rm -rf /var/www/*
