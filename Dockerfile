@@ -5,8 +5,8 @@ RUN apt-get update -y
 RUN apt-get install -y git curl apache2 php7.0 libapache2-mod-php7.0 php7.0-mcrypt php7.0-mysql
 
 # Install app
-RUN rm -rf /var/www/*
-ADD src /var/www
+RUN rm -rf /var/www/html/*
+ADD src /var/www/html
 
 # Configure apache
 RUN a2enmod rewrite
